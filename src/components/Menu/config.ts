@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#/swap',
+        href: 'https://exchange.toad.farm/#/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'https://exchange.toad.farm/#/pool',
       },
     ],
   },
@@ -29,6 +29,11 @@ const config: MenuEntry[] = [
     label: 'Breeding Ground',
     icon: 'MoonIcon',
     href: '/nests',
+  },
+  {
+    label: 'Memes',
+    icon: 'SunIcon',
+    href: '/memes',
   },
   // {
   //   label: 'Pools',
@@ -67,24 +72,25 @@ const config: MenuEntry[] = [
       // },
     ],
   },
-  // {
-  //   label: 'More',
-  //   icon: 'MoreIcon',
-  //   items: [
-  //     {
-  //       label: "Github",
-  //       href: "https://github.com/goosedefi/",
-  //     },
-  //     {
-  //       label: "Docs",
-  //       href: "https://goosedefi.gitbook.io/goose-finance/",
-  //     },
-  //     {
-  //       label: "Blog",
-  //       href: "https://goosefinance.medium.com/",
-  //     },
-  //   ],
-  // },
+
+  {
+    label: 'More',
+    icon: 'MoreIcon',
+    items: [
+      {
+        label: "Github",
+        href: "https://github.com/ToadFarm",
+      },
+      // {
+      //   label: "Docs",
+      //   href: "https://goosedefi.gitbook.io/goose-finance/",
+      // },
+      // {
+      //   label: "Blog",
+      //   href: "https://goosefinance.medium.com/",
+      // },
+    ],
+  },
   // {
   //   label: 'Audit by Hacken',
   //   icon: 'AuditIcon',

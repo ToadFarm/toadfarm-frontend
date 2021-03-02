@@ -102,7 +102,10 @@ export const useTotalValue = (): BigNumber => {
       }else{
         val = (farm.lpTotalInQuoteToken);
       }
-      value = value.plus(val);
+      val = parseFloat(val)
+      if( !Number.isNaN(val) ) {
+        value = value.plus(val);
+      }
     }
   }
   return value;

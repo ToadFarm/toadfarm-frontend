@@ -58,6 +58,10 @@ export interface FarmConfig {
   }
 }
 
+export interface MemeConfig {
+  path: string
+}
+
 export interface PoolConfig {
   sousId: number
   image?: string

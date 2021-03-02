@@ -7,8 +7,6 @@ import farmsConfig from 'config/constants/farms'
 import { QuoteToken } from '../../config/constants/types'
 
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
-console.log(CHAIN_ID)
-console.log("^CHAIN_ID")
 
 const fetchFarms = async () => {
   const data = await Promise.all(
@@ -71,6 +69,7 @@ const fetchFarms = async () => {
         }
         lpTotalInQuoteToken = tokenAmount.times(tokenPriceVsQuote);
       }else{
+
         // Ratio in % a LP tokens that are in staking, vs the total number in circulation
         const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
 
@@ -79,6 +78,7 @@ const fetchFarms = async () => {
           .div(new BigNumber(10).pow(18))
           .times(new BigNumber(2))
           .times(lpTokenRatio)
+          
 
         // Amount of token in the LP that are considered staking (i.e amount of token * lp ratio)
         tokenAmount = new BigNumber(tokenBalanceLP).div(new BigNumber(10).pow(tokenDecimals)).times(lpTokenRatio)
@@ -91,6 +91,18 @@ const fetchFarms = async () => {
         }else{
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
         }
+
+        if( farmConfig.lpSymbol === 'TOAD-BNB LP' ) {
+            // console.log( lpTokenBalanceMC )
+            // console.log( lpTokenRatio )
+            // console.log(quoteTokenBlanceLP) // Toad in LP contract ook 
+            // console.log(tokenBalanceLP) // TOAD in LP contract
+            // console.log(tokenAmount.toJSON())
+            // console.log("^ditte")
+            console.log(lpTotalInQuoteToken.toJSON())
+            console.log("AAHH")
+        }
+
       }
 
       const [info, totalAllocPoint, toadPerBlock] = await multicall(masterchefABI, [

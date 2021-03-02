@@ -25,7 +25,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TOAD',
     lpAddresses: {
       97: '',
-      56: '0x76EeBC03d4448cE15C0F4564ba9E708283f46727',
+      56: '0x8C1068F4e72042819106EF914390266e6d484C76',
     },
     tokenSymbol: 'TOAD',
     tokenAddresses: {
@@ -57,15 +57,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TOAD-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x95A1ED2b5252D46330d539749C42bb52D74C2a77',
+      56: '0x95a1ed2b5252d46330d539749c42bb52d74c2a77',
     },
     tokenSymbol: 'TOAD',
     tokenAddresses: {
       97: '',
       56: '0x22D67B3f6aCdf8c0682f6FB20590E902DeEA6BA1',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.CAKE,
+    quoteTokenAdresses: contracts.cake,
   },
   {
     pid: 6,
@@ -338,7 +338,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'AUTO',
     lpAddresses: {
       97: '',
-      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // AUTO-BNB LP
+      56: '0x4d0228EBEB39f6d2f29bA528e2d15Fc9121Ead56', // AUTO-BNB LP
     },
     tokenSymbol: 'AUTO',
     tokenAddresses: {

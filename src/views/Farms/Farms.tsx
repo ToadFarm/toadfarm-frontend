@@ -88,6 +88,20 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     [bnbPrice, account, cakePrice, ethereum],
   )
 
+  	const warning = {
+  		    backgroundColor: "rgba(100,0,0,0.55)",
+		    borderRadius: "6px",
+		    border: "1px solid rgba(200,0,0,0.55)",
+		    marginBottom: "10px",
+		    color: "white",
+		    padding: "5px",
+		    display: 'flex',
+  	}
+
+  	const margintop = {
+  		marginTop: '18px'
+  	}
+
   return (
     <Page>
       <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
@@ -103,7 +117,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       </Heading>
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
       <div>
-        <Divider />
+      	<span style={warning}>Warning: displayed APR is dependent on the value of $TOAD, which may change over time, please exercise caution and invest at your own risk.</span>
+        <Divider style={margintop}/>
         <FlexLayout>
           <Route exact path={`${path}`}>
             {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
