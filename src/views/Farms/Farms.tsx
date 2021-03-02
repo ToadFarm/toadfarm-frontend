@@ -89,9 +89,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   )
 
   	const warning = {
-  		    backgroundColor: "rgba(100,0,0,0.55)",
 		    borderRadius: "6px",
-		    border: "1px solid rgba(200,0,0,0.55)",
 		    marginBottom: "10px",
 		    color: "white",
 		    padding: "5px",
