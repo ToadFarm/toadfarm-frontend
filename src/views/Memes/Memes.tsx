@@ -125,9 +125,18 @@ const Memes: React.FC<FarmsProps> = (farmsProps) => {
       alignItems: 'center'
     }
 
+    const downloadlink = {
+      color: 'white', 
+      fontSize: '2rem'
+    }
+
+
+
   return (
     <Page>
+
      <div className="memes-container" style={memescontainer as React.CSSProperties} >
+     <a href="memes.rar" style={downloadlink}>Click here to download the meme archive</a>
       <img style={memestyle} src="images/memes/abdullah.jpg" alt="meme" />
       <img style={memestyle} src="images/memes/aditya.jpg" alt="meme" />
       <img style={memestyle} src="images/memes/ai.jpg" alt="meme" />
