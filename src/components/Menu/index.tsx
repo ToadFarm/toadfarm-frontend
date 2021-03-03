@@ -25,7 +25,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
-      priceLink="https://www.coingecko.com/en/coins/toad-farm"
+      priceLink="https://bscscan.com/token/0x22d67b3f6acdf8c0682f6fb20590e902deea6ba1"
       {...props}
     />
   )
