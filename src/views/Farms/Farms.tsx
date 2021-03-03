@@ -115,7 +115,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       </Heading>
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
       <div>
-      	<span style={warning}>Warning: displayed APR is dependent on the value of $TOAD, which may change over time, please exercise caution and invest at your own risk.</span>
         <Divider style={margintop}/>
         <FlexLayout>
           <Route exact path={`${path}`}>
