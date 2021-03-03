@@ -81,7 +81,7 @@ const farms: FarmConfig[] = [
       56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenAdresses: contracts.busd,
   },
 
   {
