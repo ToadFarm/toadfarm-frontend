@@ -55,28 +55,28 @@ const config: MenuEntry[] = [
   //   icon: 'NftIcon',
   //   href: '/nft',
   // },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x22D67B3f6aCdf8c0682f6FB20590E902DeEA6BA1',
-      },
-      // {
-      //   label: 'CoinGecko',
-      //   href: 'https://www.coingecko.com/en/coins/goose-finance',
-      // },
-      // {
-      //   label: 'CoinMarketCap',
-      //   href: 'https://coinmarketcap.com/currencies/goose-finance/',
-      // },
-      // {
-      //   label: 'AstroTools',
-      //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
-      // },
-    ],
-  },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'PancakeSwap',
+  //       href: 'https://pancakeswap.info/token/0x22D67B3f6aCdf8c0682f6FB20590E902DeEA6BA1',
+  //     },
+  //     // {
+  //     //   label: 'CoinGecko',
+  //     //   href: 'https://www.coingecko.com/en/coins/goose-finance',
+  //     // },
+  //     // {
+  //     //   label: 'CoinMarketCap',
+  //     //   href: 'https://coinmarketcap.com/currencies/goose-finance/',
+  //     // },
+  //     // {
+  //     //   label: 'AstroTools',
+  //     //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+  //     // },
+  //   ],
+  // },
 
   {
     label: 'More',
@@ -86,10 +86,10 @@ const config: MenuEntry[] = [
         label: "Github",
         href: "https://github.com/ToadFarm",
       },
-      // {
-      //   label: "Docs",
-      //   href: "https://goosedefi.gitbook.io/goose-finance/",
-      // },
+      {
+        label: "Docs",
+        href: "https://docs.farmhub.community",
+      },
       // {
       //   label: "Blog",
       //   href: "https://goosefinance.medium.com/",
