@@ -96,11 +96,11 @@ const config: MenuEntry[] = [
       // },
     ],
   },
-  // {
-  //   label: 'Audit by Hacken',
-  //   icon: 'AuditIcon',
-  //   href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
-  // },
+  {
+    label: 'Audit by Solidity (in progress)',
+    icon: 'AuditIcon',
+    href: 'https://solidity.finance/',
+  },
 ]
 
 export default config
