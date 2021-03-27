@@ -38,6 +38,7 @@ const Cards = styled(BaseLayout)`
   & > div {
     grid-column: span 6;
     width: 100%;
+    box-shadow: 0 0 7px 1px rgba(0,0,0,0.25)
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
