@@ -8,7 +8,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Farmhub',
-    icon: 'NftIcon',
+    icon: 'FarmhubIcon',
     href: 'https://farmhub.community',
   },
   {

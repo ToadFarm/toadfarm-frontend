@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
-
+    background: url(http://toad.farm/images/backgrounds/pattern-v4.png);
     img {
       height: auto;
       max-width: 100%;
