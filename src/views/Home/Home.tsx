@@ -66,7 +66,7 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          <img style={logoStyle} src="https://toad.farm/images/backgrounds/toad-logo.png" alt="test" />
+          <img style={logoStyle} src="https://toad.farm/images/backgrounds/toad-logo.png" alt="Toad Farm" />
         </Heading>
       </Hero>
       <div>
