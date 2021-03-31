@@ -17,7 +17,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.toad.farm/#/swap',
+        href: 'https://exchange.toad.farm/#/swap?outputCurrency=0x22d67b3f6acdf8c0682f6fb20590e902deea6ba1',
       },
       {
         label: 'Liquidity',
