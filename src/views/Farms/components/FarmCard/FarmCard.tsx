@@ -152,7 +152,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
                   cakePrice={cakePrice}
                   apy={farm.apy}
                 />
-                Paused for 24 hours
+                {farmAPY}%
               </>
             ) : (
               <Skeleton height={24} width={80} />
