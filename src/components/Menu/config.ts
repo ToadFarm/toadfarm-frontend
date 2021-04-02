@@ -49,12 +49,12 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.mouse.farm/#/swap',
+        href: 'https://exchange.toad.farm/#/swap',
         icon: 'TradeIcon',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.mouse.farm/#/pool',
+        href: 'https://exchange.toad.farm/#/pool',
         icon: 'LiquidityIcon',
       },
     ],
