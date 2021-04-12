@@ -49,7 +49,7 @@ const Cards = styled(BaseLayout)`
 
   ${({ theme }) => theme.mediaQueries.lg} {
     & > div {
-      grid-column: span 6;
+      grid-column: span 12;
     }
   }
 `
@@ -72,9 +72,9 @@ const Home: React.FC = () => {
       <div>
         <Cards>
           <FarmStakingCard />
-          <TwitterCard/>
           <CakeStats />
           <TotalValueLockedCard />
+          <TwitterCard/>
         </Cards>
       </div>
     </Page>
