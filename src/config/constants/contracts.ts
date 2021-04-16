@@ -20,4 +20,7 @@ export default {
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
   },
+  nestMaker: {
+    56: '0xf4f092d2FC1e28CE7954D3A38a739d05a33886e1',
+  }
 }

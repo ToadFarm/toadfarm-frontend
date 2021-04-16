@@ -11,6 +11,7 @@ import WithdrawModal from '../WithdrawModal'
 
 interface FarmCardActionsProps {
   stakedBalance?: BigNumber
+  stakedDollarValue?: BigNumber
   tokenBalance?: BigNumber
   tokenName?: string
   pid?: number
@@ -24,7 +25,14 @@ const IconButtonWrapper = styled.div`
   }
 `
 
-const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, tokenBalance, tokenName, pid, depositFeeBP}) => {
+const StakeAction: React.FC<FarmCardActionsProps> = ({
+  stakedBalance,
+  stakedDollarValue,
+  tokenBalance,
+  tokenName,
+  pid,
+  depositFeeBP,
+}) => {
   const TranslateString = useI18n()
   const { onStake } = useStake(pid)
   const { onUnstake } = useUnstake(pid)
@@ -32,10 +40,16 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, tokenBalan
   const rawStakedBalance = getBalanceNumber(stakedBalance)
   const displayBalance = rawStakedBalance.toLocaleString()
 
-  const [onPresentDeposit] = useModal(<DepositModal max={tokenBalance} onConfirm={onStake} tokenName={tokenName} depositFeeBP={depositFeeBP} />)
+  const [onPresentDeposit] = useModal(
+    <DepositModal max={tokenBalance} onConfirm={onStake} tokenName={tokenName} depositFeeBP={depositFeeBP} />,
+  )
   const [onPresentWithdraw] = useModal(
     <WithdrawModal max={stakedBalance} onConfirm={onUnstake} tokenName={tokenName} />,
   )
+
+  const dollarValue = stakedDollarValue
+    ? `$${Number(stakedDollarValue).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    : '-'
 
   const renderStakingButtons = () => {
     return rawStakedBalance === 0 ? (
@@ -52,9 +66,14 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({ stakedBalance, tokenBalan
     )
   }
 
+  const dollarStyle = {
+    opacity: '0.5',
+    fontSize: '0.9rem'
+  }
+
   return (
     <Flex justifyContent="space-between" alignItems="center">
-      <Heading color={rawStakedBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
+      <Heading color={rawStakedBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance} <span className="" style={dollarStyle}>({dollarValue})</span></Heading>
       {renderStakingButtons()}
     </Flex>
   )

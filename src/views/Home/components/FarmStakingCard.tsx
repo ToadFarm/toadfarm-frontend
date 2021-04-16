@@ -14,6 +14,7 @@ import useTokenBalance from '../../../hooks/useTokenBalance'
 import { getCakeAddress } from '../../../utils/addressHelpers'
 import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
+import './ToadBtn.css'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/toad/2a.png');
@@ -65,8 +66,11 @@ const FarmedStakingCard = () => {
     }
   }, [onReward])
 
+  const toadBuyURL = 'https://exchange.toad.farm/#/swap?outputCurrency=0x22D67B3f6aCdf8c0682f6FB20590E902DeEA6BA1'
+
   return (
     <StyledFarmStakingCard>
+      <a href={toadBuyURL} target="_blank" rel="noreferrer" className="buy-toad-btn" >Buy TOAD</a>
       <CardBody>
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}

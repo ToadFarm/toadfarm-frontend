@@ -8,6 +8,7 @@ import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
+import NestCard from './components/NestCard'
 
 const Hero = styled.div`
   align-items: center;
@@ -59,12 +60,17 @@ const logoStyle = {
   marginTop: '2.5rem',
 }
 
+const spaceTop = {
+  marginTop: '2vh',
+}
+
 const Home: React.FC = () => {
   const TranslateString = useI18n()
 
   return (
     <Page>
-      <Hero>
+      <NestCard />
+      <Hero style={spaceTop}>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
           <img style={logoStyle} src="https://toad.farm/images/backgrounds/toad-logo.png" alt="Toad Farm" />
         </Heading>

@@ -24,13 +24,8 @@ const useFarmsWithBalance = () => {
         name: 'pendingToad',
         params: [farm.pid, account],
       }))
-      console.log("TEST1")
-      console.log(masterChefABI)
       const rawResults = await multicall(masterChefABI, calls)
-
-      console.log("TEST2")
       const results = farmsConfig.map((farm, index) => ({ ...farm, balance: new BigNumber(rawResults[index]) }))
-      console.log("TEST3")
 
       setFarmsWithBalances(results)
     }
